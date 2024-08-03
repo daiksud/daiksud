@@ -11,3 +11,7 @@ updates:
       interval: "weekly"
       day: "saturday"
       timezone: "Asia/Tokyo"
+    groups:
+      dependencies:
+        patterns:
+          - '*'
