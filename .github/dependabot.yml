@@ -5,12 +5,33 @@
 
 version: 2
 updates:
-  - package-ecosystem: "npm" # See documentation for possible values
-    directory: "/" # Location of package manifests
+  - package-ecosystem: 'npm'
+    directories:
+      - '/'
     schedule:
-      interval: "weekly"
-      day: "saturday"
-      timezone: "Asia/Tokyo"
+      interval: 'weekly'
+      day: 'saturday'
+      time: '09:00'
+      timezone: 'Asia/Tokyo'
+    assignees:
+      - 'daiksud'
+    reviewers:
+      - 'daiksud'
+    groups:
+      dependencies:
+        patterns:
+          - '*'
+  - package-ecosystem: 'github-actions'
+    directory: '/'
+    schedule:
+      interval: 'weekly'
+      day: 'saturday'
+      time: '09:00'
+      timezone: 'Asia/Tokyo'
+    assignees:
+      - 'daiksud'
+    reviewers:
+      - 'daiksud'
     groups:
       dependencies:
         patterns:
