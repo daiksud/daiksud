@@ -1,0 +1,31 @@
+name: build-site
+
+on:
+  pull_request:
+
+defaults:
+  run:
+    shell: bash
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: checkout
+        uses: actions/checkout@v4
+      - name: setup-pnpm
+        uses: pnpm/action-setup@v4
+      - name: setup-node
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: pnpm
+      - name: pnpm-install
+        run: pnpm install
+      - name: pnpm-build
+        run: pnpm build
