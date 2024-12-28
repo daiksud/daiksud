@@ -1,6 +1,6 @@
-const config = {
+const prettierConfig = {
   semi: false,
   singleQuote: true,
 }
 
-export default config
+export default prettierConfig
