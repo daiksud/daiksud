@@ -1,4 +1,15 @@
 {
-  "recommendations": ["astro-build.astro-vscode"],
-  "unwantedRecommendations": []
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "eamodio.gitlens",
+    "editorconfig.editorconfig",
+    "esbenp.prettier-vscode",
+    "github.copilot-chat",
+    "github.copilot",
+    "github.vscode-github-actions",
+    "github.vscode-pull-request-github",
+    "visualstudioexptteam.vscodeintellicode-completions",
+    "visualstudioexptteam.vscodeintellicode",
+    "vue.volar"
+  ]
 }
