@@ -1,3 +1,16 @@
 {
-  "editor.formatOnSave": true
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit"
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.tabSize": 2,
+  "eslint.useFlatConfig": true,
+  "files.eol": "\n",
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "markdown.copyFiles.destination": {
+    "/docs/**/*": "${documentBaseName}/"
+  },
+  "prettier.semi": false,
+  "prettier.singleQuote": true
 }
