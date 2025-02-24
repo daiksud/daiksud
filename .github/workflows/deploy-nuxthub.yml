@@ -1,9 +1,18 @@
-name: Deploy to NuxtHub
-on: push
+name: deploy-nuxthub
+
+on:
+  push:
+
+defaults:
+  run:
+    shell: bash
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   deploy:
-    name: "Deploy to NuxtHub"
     runs-on: ubuntu-latest
     environment:
       name: ${{ github.ref == 'refs/heads/main' && 'production' || 'preview' }}
@@ -14,26 +23,20 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
-
-      - name: Install pnpm
+      - name: setup-pnpm
         uses: pnpm/action-setup@v4
-
-      - name: Install Node.js
+      - name: setup-node
         uses: actions/setup-node@v4
         with:
-          node-version: 22
-          cache: 'pnpm'
-
-      - name: Install dependencies
+          node-version-file: .nvmrc
+          cache: pnpm
+      - name: install-deps
         run: pnpm install
-
-      - name: Ensure NuxtHub module is installed
+      - name: ensure-nuxthub
         run: pnpx nuxthub@latest ensure
-
-      - name: Build application
+      - name: build-app
         run: pnpm build
-
-      - name: Deploy to NuxtHub
+      - name: deploy-nuxthub
         uses: nuxt-hub/action@v1
         id: deploy
         with:
