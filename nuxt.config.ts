@@ -4,5 +4,6 @@ export default defineNuxtConfig({
   css: ['~/assets/css/main.css'],
   devtools: { enabled: true },
   future: { compatibilityVersion: 4 },
-  modules: ['@nuxt/ui', '@nuxthub/core'],
+  modules: ['@nuxt/ui', '@nuxt/content', '@nuxthub/core'],
+  nitro: { prerender: { routes: ['/'], crawlLinks: true } },
 })
