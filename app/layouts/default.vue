@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col min-h-screen">
+  <div class="flex flex-col min-h-dvh">
     <header class="border-b">
       <UContainer class="h-16 flex items-center">
         <ULink class="text-2xl font-bold" to="/">daiksud</ULink>
