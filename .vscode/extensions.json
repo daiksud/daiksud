@@ -9,6 +9,7 @@
     "github.copilot",
     "github.vscode-github-actions",
     "github.vscode-pull-request-github",
+    "nuxt.mdc",
     "visualstudioexptteam.vscodeintellicode-completions",
     "visualstudioexptteam.vscodeintellicode",
     "vue.volar"

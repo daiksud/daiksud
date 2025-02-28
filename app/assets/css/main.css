@@ -1,2 +1,12 @@
-@import 'tailwindcss';
-@import '@nuxt/ui';
+@import 'tailwindcss' theme(static);
+@import '@nuxt/ui-pro';
+
+@source "../../../content";
+
+@theme static {
+  --font-sans: 'Noto Sans', 'Noto Sans JP', sans-serif;
+}
+
+.dark {
+  --ui-bg: var(--ui-color-neutral-950);
+}

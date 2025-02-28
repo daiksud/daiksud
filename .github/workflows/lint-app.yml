@@ -1,4 +1,4 @@
-name: build-app
+name: lint-app
 
 on:
   pull_request:
@@ -12,7 +12,7 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  build:
+  lint:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
@@ -27,5 +27,7 @@ jobs:
           cache: pnpm
       - name: install-deps
         run: pnpm install
-      - name: build-app
-        run: pnpm build
+      - name: lint
+        run: pnpm run lint
+      - name: typecheck
+        run: pnpm run typecheck

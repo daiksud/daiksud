@@ -1,17 +1,11 @@
 <template>
-  <div class="flex flex-col min-h-dvh">
-    <header class="border-b">
-      <UContainer class="h-16 flex items-center">
-        <ULink class="text-2xl font-bold" to="/">daiksud</ULink>
-      </UContainer>
-    </header>
-    <main>
+  <div>
+    <AppHeader />
+
+    <UMain>
       <slot />
-    </main>
+    </UMain>
+
+    <AppFooter />
   </div>
-  <footer class="border-t">
-    <UContainer class="h-16 flex items-center">
-      <p>&copy; {{ new Date().getFullYear() }} daiksud</p>
-    </UContainer>
-  </footer>
 </template>
