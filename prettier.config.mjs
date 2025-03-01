@@ -1,5 +1,6 @@
 const prettierConfig = {
   semi: false,
-  singleQuote: true,
+  singleQuote: true
 }
+
 export default prettierConfig

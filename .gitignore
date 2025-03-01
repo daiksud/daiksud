@@ -23,5 +23,8 @@ logs
 .env.*
 !.env.example
 
+# VSC
+.history
+
 # NuxtHub / Cloudflare
 .wrangler

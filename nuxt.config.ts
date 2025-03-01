@@ -1,26 +1,54 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  modules: ['@nuxt/ui', '@nuxt/content', '@nuxthub/core'],
-  app: {
-    head: {
-      link: [{ rel: 'icon', href: '/favicon.svg' }],
-    },
-  },
-  css: ['~/assets/css/main.css'],
+  modules: [
+    '@nuxt/ui-pro',
+    '@nuxtjs/seo',
+    '@nuxt/content',
+    '@nuxt/eslint',
+    '@nuxt/image',
+    '@nuxthub/core',
+    '@vueuse/nuxt'
+  ],
+
   devtools: {
-    enabled: true,
+    enabled: true
   },
-  icon: {
-    serverBundle: 'remote',
+
+  css: ['~/assets/css/main.css'],
+
+  site: {
+    url: 'https://daiksud.me'
   },
+
+  content: {
+    preview: {
+      api: 'https://api.nuxt.studio'
+    }
+  },
+
+  future: {
+    compatibilityVersion: 4
+  },
+
+  compatibilityDate: '2025-03-01',
+
   nitro: {
     prerender: {
       routes: ['/'],
-      crawlLinks: true,
-    },
+      crawlLinks: true
+    }
   },
-  compatibilityDate: '2024-11-01',
-  future: {
-    compatibilityVersion: 4,
+
+  typescript: {
+    strict: false
   },
+
+  eslint: {
+    config: {
+      stylistic: {
+        commaDangle: 'never',
+        braceStyle: '1tbs'
+      }
+    }
+  }
 })

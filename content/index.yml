@@ -1,0 +1,18 @@
+title: daiksud
+description: Hi! I'm daiksud. I am a Developer Productivity Engineer!
+navigation: false
+hero:
+  title: daiksud
+  description: Hi! I'm daiksud. I am a Developer Productivity Engineer!
+  links:
+    - label: Blog
+      icon: fa6-solid:blog
+      size: xl
+      to: /blog
+    - label: GitHub
+      icon: fa6-brands:github
+      size: xl
+      color: secondary
+      variant: subtle
+      to: https://github.com/daiksud
+      target: _blank
