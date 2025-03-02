@@ -2,7 +2,7 @@
 title: Nice to meet you
 description: This is first post on my blog.
 image:
-  src: /main.avif
+  src: /main.jpg
 date: 2025-03-01
 tags:
   - me
