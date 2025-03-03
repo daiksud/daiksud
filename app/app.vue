@@ -9,12 +9,12 @@ useHead({
   meta: [
     { charset: 'utf-8' },
     { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-    { key: 'theme-color', name: 'theme-color', content: color },
+    { key: 'theme-color', name: 'theme-color', content: color }
   ],
   link: [{ rel: 'icon', href: '/favicon.svg' }],
   htmlAttrs: {
-    lang: 'en',
-  },
+    lang: 'en'
+  }
 })
 
 const ogImage = `${siteConfig.url}${img('/main.jpg', { format: 'webp', quality: 80, width: 1200, height: 600 })}`
@@ -23,31 +23,31 @@ useSeoMeta({
   titleTemplate: '%s - daiksud',
   ogImage,
   twitterImage: ogImage,
-  twitterCard: 'summary_large_image',
+  twitterCard: 'summary_large_image'
 })
 
 const { data: navigation } = await useAsyncData(
   'navigation',
   () => queryCollectionNavigation('posts'),
   {
-    transform: (data) =>
-      data.find((item) => item.path === '/blog')?.children || [],
-  },
+    transform: data =>
+      data.find(item => item.path === '/blog')?.children || []
+  }
 )
 const { data: files } = useLazyAsyncData(
   'search',
   () => queryCollectionSearchSections('posts'),
   {
-    server: false,
-  },
+    server: false
+  }
 )
 
 const links = [
   {
     label: 'Blog',
     icon: 'fa6-solid:blog',
-    to: '/blog',
-  },
+    to: '/blog'
+  }
 ]
 
 provide('navigation', navigation)
