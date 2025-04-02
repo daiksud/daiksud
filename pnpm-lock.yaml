@@ -3310,8 +3310,8 @@ packages:
   image-meta@0.2.1:
     resolution: {integrity: sha512-K6acvFaelNxx8wc2VjbIzXKDVB0Khs0QT35U6NkGfTdCmjLNcO2945m7RFNR9/RPVFm48hq7QPzK8uGH18HCGw==}
 
-  image-size@2.0.1:
-    resolution: {integrity: sha512-NI6NK/2zchlZopsQrcVIS7jxA0/rtIy74B+/rx5s7rKQyFebmQjZVhzxXgRZJROk+WhhOq+S6sUaODxp0L5hfg==}
+  image-size@2.0.2:
+    resolution: {integrity: sha512-IRqXKlaXwgSMAMtpNzZa1ZAe8m+Sa1770Dhk8VkSsP9LS+iHD62Zd8FQKs8fbPiagBE7BzoFX23cxFnwshpV6w==}
     engines: {node: '>=16.x'}
     hasBin: true
 
@@ -9550,7 +9550,7 @@ snapshots:
 
   image-meta@0.2.1: {}
 
-  image-size@2.0.1: {}
+  image-size@2.0.2: {}
 
   import-fresh@3.3.1:
     dependencies:
@@ -10557,7 +10557,7 @@ snapshots:
       consola: 3.4.2
       defu: 6.1.4
       execa: 9.5.2
-      image-size: 2.0.1
+      image-size: 2.0.2
       magic-string: 0.30.17
       mocked-exports: 0.1.1
       nuxt-site-config: 3.1.7(magicast@0.3.5)(vue@3.5.13(typescript@5.7.3))
@@ -10604,7 +10604,7 @@ snapshots:
       defu: 6.1.4
       escape-string-regexp: 5.0.0
       fast-glob: 3.3.3
-      image-size: 2.0.1
+      image-size: 2.0.2
       nuxt-site-config: 3.1.7(magicast@0.3.5)(vue@3.5.13(typescript@5.7.3))
       pathe: 2.0.3
       pkg-types: 2.1.0
