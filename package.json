@@ -26,7 +26,7 @@
     "@vueuse/nuxt": "^13.3.0",
     "nuxt": "^3.17.4",
     "nuxt-og-image": "^5.1.4",
-    "tailwindcss": "^4.1.7"
+    "tailwindcss": "^4.1.8"
   },
   "devDependencies": {
     "@nuxt/eslint": "^1.4.1",
