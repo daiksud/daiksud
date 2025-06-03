@@ -25,7 +25,7 @@
     "@nuxtjs/seo": "3.0.3",
     "@vueuse/nuxt": "^13.3.0",
     "nuxt": "^3.17.4",
-    "nuxt-og-image": "^5.1.4",
+    "nuxt-og-image": "^5.1.5",
     "tailwindcss": "^4.1.8"
   },
   "devDependencies": {
