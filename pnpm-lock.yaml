@@ -62,8 +62,8 @@ importers:
         specifier: 2.2.2
         version: 2.2.2(typescript@5.7.3)
       wrangler:
-        specifier: ^4.19.0
-        version: 4.19.0
+        specifier: ^4.19.1
+        version: 4.19.1
 
 packages:
 
@@ -6412,8 +6412,8 @@ packages:
     engines: {node: '>=16'}
     hasBin: true
 
-  wrangler@4.19.0:
-    resolution: {integrity: sha512-rqrqgZKBLff868vQHbIp3qxPNzsGzBx5hx5D6IaNTEQFbchYYSp2j4jT0ZmkGeBlJiJvnbS3N0FU4XmIbaUeog==}
+  wrangler@4.19.1:
+    resolution: {integrity: sha512-b+ed2SJKauHgndl4Im1wHE+FeSSlrdlEZNuvpc8q/94k4EmRxRkXnwBAsVWuicBxG3HStFLQPGGlvL8wGKTtHw==}
     engines: {node: '>=18.0.0'}
     hasBin: true
     peerDependencies:
@@ -6587,8 +6587,8 @@ packages:
   zod@3.24.4:
     resolution: {integrity: sha512-OdqJE9UDRPwWsrHjLN2F8bPxvwJBK22EHLWtanu0LSYr5YqzsaaW3RMgmjwr8Rypg5k+meEJdSPXJZXE/yqOMg==}
 
-  zod@3.25.49:
-    resolution: {integrity: sha512-JMMPMy9ZBk3XFEdbM3iL1brx4NUSejd6xr3ELrrGEfGb355gjhiAWtG3K5o+AViV/3ZfkIrCzXsZn6SbLwTR8Q==}
+  zod@3.25.51:
+    resolution: {integrity: sha512-TQSnBldh+XSGL+opiSIq0575wvDPqu09AqWe1F7JhUMKY+M91/aGlK4MhpVNO7MgYfHcVCB1ffwAUTJzllKJqg==}
 
   zwitch@2.0.4:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}
@@ -7474,7 +7474,7 @@ snapshots:
       unixify: 1.0.0
       urlpattern-polyfill: 8.0.2
       yargs: 17.7.2
-      zod: 3.25.49
+      zod: 3.25.51
     transitivePeerDependencies:
       - encoding
       - rollup
@@ -14492,7 +14492,7 @@ snapshots:
       '@cloudflare/workerd-linux-arm64': 1.20250525.0
       '@cloudflare/workerd-windows-64': 1.20250525.0
 
-  wrangler@4.19.0:
+  wrangler@4.19.1:
     dependencies:
       '@cloudflare/kv-asset-handler': 0.4.0
       '@cloudflare/unenv-preset': 2.3.2(unenv@2.0.0-rc.17)(workerd@1.20250525.0)
@@ -14627,6 +14627,6 @@ snapshots:
 
   zod@3.24.4: {}
 
-  zod@3.25.49: {}
+  zod@3.25.51: {}
 
   zwitch@2.0.4: {}
