@@ -42,7 +42,7 @@ jobs:
           NUXT_UI_PRO_LICENSE: ${{ secrets.NUXT_UI_PRO_LICENSE }}
           NUXT_PUBLIC_SITE_URL: ${{ vars.NUXT_PUBLIC_SITE_URL }}
       - name: deploy-nuxthub
-        uses: nuxt-hub/action@v1
+        uses: nuxt-hub/action@v2
         id: deploy
         with:
           project-key: ${{ vars.NUXTHUB_PROJECT_KEY }}
