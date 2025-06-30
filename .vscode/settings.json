@@ -2,6 +2,9 @@
   "[astro]": {
     "editor.defaultFormatter": "astro-build.astro-vscode"
   },
+  "cSpell.words": [
+    "daiksud"
+  ],
   "editor.codeActionsOnSave": {
     "source.addMissingImports": "explicit",
     "source.fixAll": "explicit",

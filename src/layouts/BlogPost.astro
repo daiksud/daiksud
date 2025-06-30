@@ -5,6 +5,7 @@ import BaseHead from '../components/BaseHead.astro'
 import Footer from '../components/Footer.astro'
 import FormattedDate from '../components/FormattedDate.astro'
 import Header from '../components/Header.astro'
+import { SITE_TITLE } from '../consts'
 
 type Props = CollectionEntry<'blog'>['data']
 
@@ -14,7 +15,7 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props
 <!doctype html>
 <html lang="ja">
   <head>
-    <BaseHead title={title} description={description} />
+    <BaseHead title={`${title} | ${SITE_TITLE}`} description={description} />
     <style>
       main {
         width: calc(100% - 2em);
@@ -63,7 +64,13 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props
         <div class="hero-image">
           {
             heroImage && (
-              <Image width={1020} height={510} src={heroImage} alt="" />
+              <Image
+                src={heroImage}
+                alt=""
+                width={1020}
+                height={510}
+                fit="cover"
+              />
             )
           }
         </div>
