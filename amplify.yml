@@ -3,6 +3,8 @@ frontend:
   phases:
     preBuild:
       commands:
+        - nvm install
+        - nvm use
         - npm install --global corepack@latest
         - corepack enable
         - corepack prepare pnpm@latest --activate
