@@ -8,6 +8,9 @@ export default defineConfig({
   site: 'https://daiksud.com',
   integrations: [sitemap()],
   trailingSlash: 'always',
+  image: {
+    domains: ['github.com'],
+  },
   vite: {
     plugins: [tailwindcss()],
   },
