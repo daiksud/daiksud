@@ -16,9 +16,7 @@
     },
     "ghcr.io/devcontainers/features/github-cli:1": {},
     "ghcr.io/devcontainers/features/sshd:1": {},
-    "ghcr.io/devcontainers/features/node:1": {
-      "version": "latest"
-    }
+    "ghcr.io/devcontainers/features/node:1": {}
   },
   "postCreateCommand": ".devcontainer/postCreateCommand.sh",
   "customizations": {
