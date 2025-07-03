@@ -8,6 +8,7 @@ import { defineConfig } from 'astro/config'
 export default defineConfig({
   site: 'https://daiksud.com',
   integrations: [mdx(), sitemap()],
+  trailingSlash: 'always',
   vite: {
     plugins: [tailwindcss()],
   },
