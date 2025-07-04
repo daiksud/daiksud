@@ -7,7 +7,9 @@ import { defineConfig } from 'astro/config'
 export default defineConfig({
   site: 'https://daiksud.com',
   integrations: [sitemap()],
-  prefetch: true,
+  prefetch: {
+    prefetchAll: true,
+  },
   trailingSlash: 'always',
   image: {
     domains: ['github.com'],
