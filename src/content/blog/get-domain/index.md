@@ -1,7 +1,7 @@
 ---
 title: ドメインを取得した
 description: AWSのRoute 53でドメインを取得して設定した。
-pubDate: 2025-07-01T22:00:00+09:00
+pubDate: 2025-07-01T09:00:00+09:00
 heroImage: ./img/get-a-domain.jpg
 tags:
   - aws
