@@ -11,14 +11,14 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props
 
 <RootLayout title={title} description={description}>
   <article>
-    <div>
+    <div class="relative w-full grid place-items-center">
       {
         heroImage && (
           <Image src={heroImage} alt="" width={1020} height={510} fit="cover" />
         )
       }
     </div>
-    <div class="prose dark:prose-invert md:prose-lg mx-auto my-8">
+    <div class="prose dark:prose-invert md:prose-lg my-8 mx-auto px-4">
       <div>
         <div>
           <FormattedDate date={pubDate} />
