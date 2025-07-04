@@ -1,7 +1,7 @@
 ---
 title: ようこそ
 description: ブログサイトを作ってみた
-pubDate: 2025-06-30T15:00:00+09:00
+pubDate: 2025-06-30T09:00:00+09:00
 heroImage: ./img/welcome.jpg
 tags:
   - astro

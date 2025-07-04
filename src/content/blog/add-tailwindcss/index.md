@@ -1,7 +1,7 @@
 ---
 title: Tailwind CSSを導入した
 description: AstroでTailwind CSSを導入しました。
-pubDate: 2025-07-02T22:00:00+09:00
+pubDate: 2025-07-02T09:00:00+09:00
 heroImage: ./assets/tailwind-css.jpg
 tags:
   - astro
