@@ -1,5 +1,5 @@
 ---
-import { Image } from 'astro:assets'
+import { Picture } from 'astro:assets'
 import { getCollection } from 'astro:content'
 import FormattedDate from '../../components/FormattedDate.astro'
 import RootLayout from '../../layouts/RootLayout.astro'
@@ -20,13 +20,15 @@ const posts = (await getCollection('blog')).sort(
               class="row-[inherit] grid grid-rows-[inherit] gap-3 place-items-center"
             >
               {post.data.heroImage && (
-                <Image
+                <Picture
                   src={post.data.heroImage}
                   alt=""
                   width={720}
                   height={360}
                   fit="cover"
-                  class="rounded-lg"
+                  class="rounded-lg hero-image"
+                  style={`view-transition-name: hero-image-${post.id}`}
+                  formats={['avif', 'webp']}
                 />
               )}
               <h4 class="text-lg md:text-2xl">{post.data.title}</h4>
@@ -40,3 +42,8 @@ const posts = (await getCollection('blog')).sort(
     </ul>
   </section>
 </RootLayout>
+<style>
+  .hero-image {
+    contain: paint;
+  }
+</style>

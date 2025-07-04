@@ -1,39 +1,53 @@
 ---
-import { Image } from 'astro:assets'
+import { Picture } from 'astro:assets'
 import type { CollectionEntry } from 'astro:content'
 import FormattedDate from '../components/FormattedDate.astro'
 import RootLayout from './RootLayout.astro'
 
-type Props = CollectionEntry<'blog'>['data']
+type Props = CollectionEntry<'blog'>
 
-const { title, description, pubDate, updatedDate, heroImage } = Astro.props
+const { id, data } = Astro.props
 ---
 
-<RootLayout title={title} description={description}>
+<RootLayout title={data.title} description={data.description}>
   <article>
-    <div class="relative w-full grid place-items-center">
+    <div class="grid place-items-center">
       {
-        heroImage && (
-          <Image src={heroImage} alt="" width={1020} height={510} fit="cover" />
+        data.heroImage && (
+          <Picture
+            src={data.heroImage}
+            alt=""
+            width={1020}
+            height={510}
+            fit="cover"
+            class="hero-image"
+            style={`view-transition-name: hero-image-${id}`}
+            formats={['avif', 'webp']}
+          />
         )
       }
     </div>
     <div class="prose dark:prose-invert md:prose-lg my-8 mx-auto px-4">
       <div>
         <div>
-          <FormattedDate date={pubDate} />
+          <FormattedDate date={data.pubDate} />
           {
-            updatedDate && (
+            data.updatedDate && (
               <div>
-                最終更新: <FormattedDate date={updatedDate} />
+                最終更新: <FormattedDate date={data.updatedDate} />
               </div>
             )
           }
         </div>
-        <h1>{title}</h1>
+        <h1>{data.title}</h1>
         <hr />
       </div>
       <slot />
     </div>
   </article>
 </RootLayout>
+<style>
+  .hero-image {
+    contain: paint;
+  }
+</style>
