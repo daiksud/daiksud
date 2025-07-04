@@ -10,7 +10,7 @@ const posts = (await getCollection('blog')).sort(
 ---
 
 <RootLayout title="ブログ">
-  <section class="my-12">
+  <section class="my-12 mx-4">
     <ul class="grid grid-cols-2 md:grid-cols-3 gap-6">
       {
         posts.map((post) => (
@@ -29,7 +29,7 @@ const posts = (await getCollection('blog')).sort(
                   class="rounded-lg"
                 />
               )}
-              <h4 class="text-2xl">{post.data.title}</h4>
+              <h4 class="text-lg md:text-2xl">{post.data.title}</h4>
               <p class="date">
                 <FormattedDate date={post.data.pubDate} />
               </p>
