@@ -1,17 +1,18 @@
 ---
-import { Image } from 'astro:assets'
+import { Picture } from 'astro:assets'
 import { SITE_DESCRIPTION, SITE_TITLE } from '../consts'
 import RootLayout from '../layouts/RootLayout.astro'
 ---
 
 <RootLayout>
   <section class="grid place-items-center text-center py-12">
-    <Image
+    <Picture
       src="https://github.com/daiksud.png"
       alt="daiksud's avatar"
       width="400"
       height="400"
       class="rounded-full w-64 h-64 mb-8"
+      formats={['avif', 'webp']}
     />
     <h1 class="text-5xl mb-4">{SITE_TITLE}</h1>
     <p>{SITE_DESCRIPTION}</p>
