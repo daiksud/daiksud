@@ -9,7 +9,11 @@ type Props = CollectionEntry<'blog'>
 const { id, data } = Astro.props
 ---
 
-<RootLayout title={data.title} description={data.description}>
+<RootLayout
+  title={data.title}
+  description={data.description}
+  image={data.heroImage}
+>
   <article>
     <div class="grid place-items-center">
       {
