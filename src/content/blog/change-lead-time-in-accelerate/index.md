@@ -2,7 +2,7 @@
 title: 「LeanとDevOpsの科学」の「リードタイム」を正しく理解する
 description: 「リードタイム」について様々な解釈があるようなので「LeanとDevOpsの科学」で説明されている「リードタイム」とは何なのかを正しく理解します。
 pubDate: 2025-07-05T18:00:00+09:00
-heroImage: ./assets/change-lead-time.jpg
+heroImage: ./assets/lead-time-for-changes.jpg
 tags:
   - accelerate
   - the-science-of-lean-software-and-devops
