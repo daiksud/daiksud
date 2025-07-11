@@ -5,23 +5,17 @@ updates:
     directory: /
     schedule:
       interval: daily
-    reviewers:
-      - daiksud
     assignees:
       - daiksud
   - package-ecosystem: docker
     directory: /.devcontainer/
     schedule:
       interval: daily
-    reviewers:
-      - daiksud
     assignees:
       - daiksud
   - package-ecosystem: devcontainers
     directory: /
     schedule:
       interval: daily
-    reviewers:
-      - daiksud
     assignees:
       - daiksud
