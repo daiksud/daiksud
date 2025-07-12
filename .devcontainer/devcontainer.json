@@ -24,7 +24,13 @@
       "extensions": [
         "astro-build.astro-vscode",
         "dbaeumer.vscode-eslint",
-        "esbenp.prettier-vscode"
+        "esbenp.prettier-vscode",
+        "TakumiI.markdowntable",
+        "DavidAnson.vscode-markdownlint",
+        "shd101wyy.markdown-preview-enhanced",
+        "bierner.markdown-preview-github-styles",
+        "bierner.markdown-yaml-preamble",
+        "bierner.markdown-emoji"
       ]
     }
   }
