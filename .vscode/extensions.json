@@ -2,7 +2,13 @@
   "recommendations": [
     "astro-build.astro-vscode",
     "dbaeumer.vscode-eslint",
-    "esbenp.prettier-vscode"
+    "esbenp.prettier-vscode",
+    "takumii.markdowntable",
+    "davidanson.vscode-markdownlint",
+    "shd101wyy.markdown-preview-enhanced",
+    "bierner.markdown-preview-github-styles",
+    "bierner.markdown-yaml-preamble",
+    "bierner.markdown-emoji"
   ],
   "unwantedRecommendations": []
 }
