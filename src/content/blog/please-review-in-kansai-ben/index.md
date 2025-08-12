@@ -2,11 +2,16 @@
 title: GitHub Copilotに関西弁でレビューしてもらう
 description: Pull Requestの本文に「関西弁でレビューしてください」と書いておくと、GitHub Copilotは関西弁でレビューしてくれます。
 pubDate: 2025-07-08T22:00:00+09:00
+updatedDate: 2025-08-12T09:00:00+09:00
 heroImage: ./assets/nandeyanen.jpg
 tags:
   - github
   - github-copilot
 ---
+
+> [!NOTE]
+> 2025年8月12日現在は、公式な指示の方法としてカスタムインストラクションが案内されています。カスタムインストラクションで関西弁でのレビューを指示しましょう。
+> [カスタム指示を使用した Copilot のレビューのカスタマイズ](https://docs.github.com/ja/copilot/how-tos/use-copilot-agents/request-a-code-review/use-code-review#%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%A0%E6%8C%87%E7%A4%BA%E3%82%92%E4%BD%BF%E7%94%A8%E3%81%97%E3%81%9F-copilot-%E3%81%AE%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC%E3%81%AE%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%9E%E3%82%A4%E3%82%BA)
 
 小ネタですが、GitHub CopilotにPull Requestのレビューを依頼するとき、どのようにレビューして欲しいかを指示できます。
 
