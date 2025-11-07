@@ -15,7 +15,7 @@
     "@tailwindcss/vite": "^4.1.16",
     "astro": "^5.15.3",
     "sharp": "^0.34.5",
-    "tailwindcss": "^4.1.16"
+    "tailwindcss": "^4.1.17"
   },
   "devDependencies": {
     "@typescript-eslint/parser": "^8.46.3",
