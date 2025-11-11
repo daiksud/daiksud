@@ -18,7 +18,7 @@
     "tailwindcss": "^4.1.17"
   },
   "devDependencies": {
-    "@typescript-eslint/parser": "^8.46.3",
+    "@typescript-eslint/parser": "^8.46.4",
     "eslint": "^9.39.1",
     "eslint-plugin-astro": "^1.5.0",
     "eslint-plugin-jsx-a11y": "^6.10.2",
