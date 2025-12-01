@@ -27,5 +27,5 @@
     "textlint": "^15.4.0",
     "textlint-rule-preset-ja-technical-writing": "^12.0.2"
   },
-  "packageManager": "pnpm@10.14.0"
+  "packageManager": "pnpm@10.24.0"
 }
